@@ -21,7 +21,7 @@ class ReaktorSlack < Sinatra::Base
       attachments: [
         {
           text: "Beer. Now.",
-          image_url: "https://reaktor.slack.com/files/juho/F271HUWGN/beer.gif"
+          image_url: "https://s3.amazonaws.com/codeguy-slackbot/images/beer.gif"
         }
       ]
     }.to_json
