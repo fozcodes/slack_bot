@@ -19,7 +19,7 @@ class ReaktorSlack < Sinatra::Base
       attachments: [
         {
           text: "A standing f***ing ovation for you.",
-          image_url: "https://s3.amazonaws.com/codeguy-slackbot/images/ezgif.com-resize.gif"
+          image_url: "https://s3.amazonaws.com/codeguy-slackbot/images/ezgif.com-optimize.gif"
         }
       ] 
     }.to_json
