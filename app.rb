@@ -15,7 +15,7 @@ class ReaktorSlack < Sinatra::Base
 
   def get_the_beef
     { 
-      response_type: "in_channel",
+      response_type: "ephimeral",
       attachments: [
         {
           text: "A standing f***ing ovation for you.",
