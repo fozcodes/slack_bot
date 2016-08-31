@@ -11,11 +11,13 @@ class ReaktorSlack < Sinatra::Base
     get_the_beef
   end
 
+  #TODO: More is more, danger zone
+
   private
 
   def get_the_beef
     { 
-      response_type: "ephimeral",
+      response_type: "in_channel",
       attachments: [
         {
           text: "A standing f***ing ovation for you.",
