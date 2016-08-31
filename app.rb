@@ -14,5 +14,17 @@ class ReaktorSlack < Sinatra::Base
     }.to_json
   end
 
+  get "/beers" do
+    content_type :json
+    {
+      response_type: "in_channel",
+      attachments: [
+        {
+          text: "Beer. Now.",
+          image_url: "https://reaktor.slack.com/files/juho/F271HUWGN/beer.gif"
+        }
+      ]
+    }.to_json
+  end
   #TODO: More is more, danger zone
 end
