@@ -26,5 +26,18 @@ class ReaktorSlack < Sinatra::Base
       ]
     }.to_json
   end
+
+  get "/turku" do
+    content_type :json
+    {
+      response_type: "in_channel",
+      attachments: [
+        {
+          text: "Hey, Turku!",
+          image_url: "https://s3.amazonaws.com/codeguy-slackbot/images/turku.jpg"
+        }
+      ]
+    }.to_json
+  end
   #TODO: More is more, danger zone
 end
