@@ -1,2 +1,20 @@
-A simple Sinatra app to return random stuff to Slack commands
+# TrotExample
+
+**TODO: Add description**
+
+## Installation
+
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+
+  1. Add trot_example to your list of dependencies in `mix.exs`:
+
+        def deps do
+          [{:trot_example, "~> 0.0.1"}]
+        end
+
+  2. Ensure trot_example is started before your application:
+
+        def application do
+          [applications: [:trot_example]]
+        end
 
