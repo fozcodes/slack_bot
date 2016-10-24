@@ -1,4 +1,4 @@
-# SlackBot
+# TrotExample
 
 **TODO: Add description**
 
@@ -6,19 +6,15 @@
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add `slack_bot` to your list of dependencies in `mix.exs`:
+  1. Add trot_example to your list of dependencies in `mix.exs`:
 
-    ```elixir
-    def deps do
-      [{:slack_bot, "~> 0.1.0"}]
-    end
-    ```
+        def deps do
+          [{:trot_example, "~> 0.0.1"}]
+        end
 
-  2. Ensure `slack_bot` is started before your application:
+  2. Ensure trot_example is started before your application:
 
-    ```elixir
-    def application do
-      [applications: [:slack_bot]]
-    end
-    ```
+        def application do
+          [applications: [:trot_example]]
+        end
 

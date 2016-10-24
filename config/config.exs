@@ -2,6 +2,7 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :trot, :router, SlackBot.Router
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
@@ -10,11 +11,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :slack_bot, key: :value
+#     config :trot_example, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:slack_bot, :key)
+#     Application.get_env(:trot_example, :key)
 #
 # Or configure a 3rd-party app:
 #
