@@ -4,7 +4,7 @@ defmodule SlackBot.Mixfile do
   def project do
     [app: :slack_bot,
      version: "0.0.1",
-     elixir: "~> 1.2.6",
+     elixir: "~> 1.3.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -16,7 +16,7 @@ defmodule SlackBot.Mixfile do
   def application do
     [applications: [:logger, :trot]]
   end
-  
+
   defp deps do
     [
       {:poison, "~> 1.4"},
