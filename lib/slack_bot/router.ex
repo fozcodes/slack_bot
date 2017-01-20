@@ -1,5 +1,19 @@
 defmodule SlackBot.Router do
-  use Trot.Router 
+  use Trot.Router
+
+  get "/thumbsup" do
+    conn = put_resp_content_type(conn, "application/json")
+    message = %{
+      "response_type" => "in_channel",
+      "attachments" => [
+        %{
+          "text" => "",
+          "image_url" => "https://s3.amazonaws.com/codeguy-slackbot/images/threethumbs.GIF"
+        }
+      ]
+    } |> Poison.encode!([])
+    send_resp(conn, 200, message)
+  end
 
   get "/thebeef" do
     conn = put_resp_content_type(conn, "application/json")
