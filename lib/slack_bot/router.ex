@@ -8,7 +8,7 @@ defmodule SlackBot.Router do
       "attachments" => [
         %{
           "text" => "",
-          "image_url" => "https://s3.amazonaws.com/codeguy-slackbot/images/threethumbs.GIF"
+          "image_url" => "https://s3.amazonaws.com/codeguy-slackbot/images/threethumbs.gif"
         }
       ]
     } |> Poison.encode!([])
