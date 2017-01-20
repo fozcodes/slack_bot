@@ -1,7 +1,7 @@
 defmodule SlackBot.Router do
   use Trot.Router
 
-  get "/thumbsup" do
+  get "/thumbs" do
     conn = put_resp_content_type(conn, "application/json")
     message = %{
       "response_type" => "in_channel",
