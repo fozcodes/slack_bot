@@ -57,5 +57,19 @@ defmodule SlackBot.Router do
     send_resp(conn, 200, message)
   end
 
+  get "/fozfuk" do
+    conn = put_resp_content_type(conn, "application/json")
+    message = %{
+      "response_type" => "in_channel",
+      "attachments" => [
+        %{
+          "text" => "Take that, fuckers!",
+          "image_url" => "https://s3.amazonaws.com/codeguy-slackbot/images/foz_dance_opt.gif"
+        }
+      ]
+    } |> Poison.encode!([])
+    send_resp(conn, 200, message)
+  end
+
   import_routes Trot.NotFound
 end
